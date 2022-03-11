@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e07ab6832fcb32903bd0c0fcd3498bdb835a9dd0a2e20f0af1a08921216451ef
+-- hash: a051c796cbdd4100a43ab651b2ed5635b6ac4f7d894231644671adbbbd511e8a
 
 name:           proj
 version:        0.1.0.0
@@ -57,6 +57,7 @@ test-suite proj-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      HUnit
+    , base >=4.7 && <5
     , proj
   default-language: Haskell2010
