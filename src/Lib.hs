@@ -44,5 +44,5 @@ getWinner (GameState f cp) | any (\row -> all (==XMark) row ) f = Winner XPlayer
                            | any (==Empty) (concat f) = None
                            | otherwise = Draw
 
-play:: Winner
-play = evalState gamePlay initialState
+-- play:: Winner
+play = execState gamePlay initialState

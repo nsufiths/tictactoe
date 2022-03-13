@@ -26,6 +26,7 @@ library:
   source-dirs: src
   dependencies:
   - mtl
+  - random
 
 executables:
   proj-exe:
