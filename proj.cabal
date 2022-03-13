@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 2da0a80bdf9c650f90a627382b7afe78c070224413e597393dab332600078a62
+-- hash: 81240bb6047d1b865bba550c7f5bba21c5352dc7508d591365bf43683be02c3e
 
 name:           proj
 version:        0.1.0.0
@@ -28,6 +28,7 @@ source-repository head
 library
   exposed-modules:
       Lib
+      Player
   other-modules:
       Paths_proj
   hs-source-dirs:
