@@ -16,7 +16,7 @@ test2 = TestCase ( do
                     )
 
 test3 = TestCase ( do 
-                    let field = replicate 3 $ replicate 3 None
+                    let field = replicate 3 $ replicate 3 Empty
                     let state = GameState field XPlayer
                     let winner = getWinner state
                     assertEqual "For empty field " Draw winner

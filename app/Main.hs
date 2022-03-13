@@ -1,12 +1,20 @@
 module Main where
-
+import System.Random
 import Lib
 
-test:: IO Int
-test =  putStrLn "aza" >> return 100500
+getTurnFirst::IO (Int, Int)
+getTurnFirst = do 
+    x <- randomRIO (0,3)
+    y <- randomRIO (0,3)
+    return (x,y)
 
--- (>>) :: Monad m => m a -> m b -> m b
--- (>>=) :: Monad m => m a -> (a -> m b) -> m b
+getTurnSecond::IO (Int, Int)
+getTurnSecond = do 
+    x <- randomRIO (0,3)
+    y <- randomRIO (0,3)
+    return (x,y)
 
 main :: IO ()
-main = print $ makeTurn (1,1)
+main = print $ play
+    
+
